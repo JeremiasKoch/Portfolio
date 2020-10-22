@@ -1,0 +1,101 @@
+body {
+  font-family: 'Bebas Neue', cursive;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+} 
+
+.multiply-bg:hover {
+  background-blend-mode: multiply;
+}
+.multiply-bg:hover ~ .profile{
+  background-blend-mode: normal;
+}
+.experienciaClass:hover ~ .profile{
+  background-blend-mode: normal;
+}
+ul li:nth-child(1){
+  bottom: 0;
+  background:  url(./img/perfil.jpg);
+  background-size: cover;
+  background-position: left;
+}
+ul li:nth-child(2){
+  background:#9932CC url(./img/proyectos.jpg);
+  background-size: cover;
+  background-position: left;
+}
+ul li:nth-child(3){
+  background: #FF7F50 url(./img/contacto.jpg);
+  background-size: cover;
+  background-position: left;
+  background-blend-mode: multiply;
+}
+
+ul li:hover #div-perfil {
+  transition: 0.5s;
+  transition-delay: 0.3;
+  opacity: 1;
+}
+
+ul li:hover #div-proyectos {
+  transition: 0.5s;
+  transition-delay: 0.3;
+  opacity: 1;
+}
+
+ul li:hover #div-contacto {
+  transition: 0.5s;
+  transition-delay: 0.3;
+  opacity: 1;
+}
+
+ul li:hover #div-home {
+  transition: 0.5s;
+  transition-delay: 0.3;
+  opacity: 1
+}
+.container {
+  scroll-snap-type: y mandatory;
+}
+
+.container .section {
+  background-blend-mode: multiply;
+  scroll-snap-align: start;
+}
+
+.container .section:nth-child(1){
+  background: #f00 url(./img/test1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container .section:nth-child(2){
+  background: #0ff url(./img/test2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container .section:nth-child(3){
+  background:#F74388 url(./img/test3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container .section:nth-child(4){
+  background:#9BBF63 url(./img/test4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@keyframes palp {
+  from { transform: rotate(90deg) }
+  50% { transform: scale(1.4) rotate(90deg)}
+
+  to { transform: rotate(90deg) }
+}
+
+
+.iconScroll {
+	animation: palp .8s infinite;
+}
+
